@@ -19,7 +19,7 @@ if(!class_exists('Tpc_Vendor_Dashboard'))
         private $plugin_name;
         private $current_user_id;
         private $vendor_dashboard_action;
-        private $user_can = 'seller';
+        //private $user_can = 'seller';
 
         public function __construct($plugin_name_param)
         {
@@ -30,7 +30,7 @@ if(!class_exists('Tpc_Vendor_Dashboard'))
 
         public function tpc_load_vendor_dashboard()
         {
-            try {
+            /*try {
 
                 $this->vk_check_permission($this->user_can);
 
@@ -38,7 +38,7 @@ if(!class_exists('Tpc_Vendor_Dashboard'))
 
                 exit();
 
-            }
+            }*/
 
             // Crea un objeto de preferencia
             $preference = new MercadoPago\Preference();
