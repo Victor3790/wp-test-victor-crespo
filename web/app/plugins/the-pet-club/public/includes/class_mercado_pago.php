@@ -19,7 +19,7 @@ if(!class_exists('Tpc_Mercado_Pago'))
 
         function get_response()
         {
-            $dumb = 1+1;
+            return new WP_REST_Response( [ 'status'=>200 ] );
         }
     }
 }
