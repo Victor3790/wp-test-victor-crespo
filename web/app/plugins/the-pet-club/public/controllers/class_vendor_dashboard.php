@@ -40,9 +40,7 @@ if(!class_exists('Tpc_Vendor_Dashboard'))
 
             }*/
 
-            //throw new Exception("Heeey!!", 1);
-            
-            wp_mail( 'victor182@msn.com', 'Hey fucker!', 'What\'s up fucker!' );
+            throw new Exception("Heeey!!", 1);
 
             // Crea un objeto de preferencia
             $preference = new MercadoPago\Preference();
