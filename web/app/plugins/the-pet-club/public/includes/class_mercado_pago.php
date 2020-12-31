@@ -22,7 +22,7 @@ if(!class_exists('Tpc_Mercado_Pago'))
         {
 	        $fichero = '/app/web/wp/payments.txt';
             $actual = file_get_contents($fichero);
-            $actual .= var_dump($json);
+            $actual .= print_r( $json, true );
             file_put_contents($fichero, $actual);
 
             return new WP_REST_Response( [ 'status'=>200 ] );
