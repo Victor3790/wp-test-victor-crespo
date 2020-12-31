@@ -22,7 +22,7 @@ if(!class_exists('Tpc_Mercado_Pago'))
 
         public function get_response( $json )
         {
-	        $fichero = 'payments.txt';
+	        $fichero = '/app/web/app/payments.txt';
             $actual = file_get_contents($fichero);
             $actual .= var_dump($json);
             file_put_contents($fichero, $actual);
