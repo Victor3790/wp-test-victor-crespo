@@ -11,7 +11,8 @@ if(!class_exists('Tpc_Mercado_Pago'))
         function register_route()
         {
             register_rest_route( 'tpc', '/subscription', array(
-                'methods' => WP_REST_SERVER::CREATABLE,
+                /*'methods' => WP_REST_SERVER::CREATABLE,*/
+                'methods' => 'POST',
                 'callback' => function() {return new WP_REST_Response( [ 'status'=>200 ] );},
                 'args' => array()
                 /*'callback' => array( $this, 'get_response' )*/
