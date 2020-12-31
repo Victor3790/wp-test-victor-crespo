@@ -40,6 +40,8 @@ if(!class_exists('Tpc_Vendor_Dashboard'))
 
             }*/
 
+            trigger_error( 'Hey!!!!!!!!   ..................' );
+
             // Crea un objeto de preferencia
             $preference = new MercadoPago\Preference();
 
