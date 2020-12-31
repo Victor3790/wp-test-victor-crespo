@@ -40,8 +40,6 @@ if(!class_exists('Tpc_Vendor_Dashboard'))
 
             }*/
 
-            trigger_error( 'Hey!!!!!!!!   ..................' );
-
             // Crea un objeto de preferencia
             $preference = new MercadoPago\Preference();
 
@@ -50,7 +48,7 @@ if(!class_exists('Tpc_Vendor_Dashboard'))
             $item->title = 'Mi producto';
             $item->quantity = 1;
             $item->unit_price = 75.56;
-            $preference->notification_url = home_url('tpc/v1/subscription');
+            $preference->notification_url = get_rest_url(null, 'tpc/v1/subscription');
             $preference->items = array($item);
             $preference->save();
 
