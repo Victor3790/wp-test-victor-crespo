@@ -20,12 +20,14 @@ if(!class_exists('Tpc_Mercado_Pago'))
 
         public function get_response( $json )
         {
+            return new WP_REST_Response( [ 'status'=>200 ] );
+            
 	        $fichero = '/app/web/wp/payments.txt';
             $actual = file_get_contents($fichero);
             $actual .= print_r( $json, true );
             file_put_contents($fichero, $actual);
 
-            return new WP_REST_Response( [ 'status'=>200 ] );
+            //return new WP_REST_Response( [ 'status'=>200 ] );
         }
     }
 }
