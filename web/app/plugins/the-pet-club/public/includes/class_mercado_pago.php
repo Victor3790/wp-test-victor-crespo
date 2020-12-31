@@ -12,7 +12,8 @@ if(!class_exists('Tpc_Mercado_Pago'))
         {
             register_rest_route( 'tpc', '/subscription', array(
                 'methods' => 'POST',
-                'callback' => function() {return new WP_REST_Response( [ 'status'=>200 ] );}
+                'callback' => function() {return new WP_REST_Response( [ 'status'=>200 ] );},
+                'args' => array()
                 /*'callback' => array( $this, 'get_response' )*/
               ) 
             );
