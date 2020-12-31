@@ -24,6 +24,8 @@ if(!class_exists('Tpc_Mercado_Pago'))
             $actual .= $json;
             file_put_contents($fichero, $actual);*/
 
+            trigger_error( 'Hey!!!!!!!!   ..................' );
+
             return new WP_REST_Response( [ 'status'=>200 ] );
         }
     }
